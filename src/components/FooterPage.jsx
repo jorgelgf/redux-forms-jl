@@ -3,11 +3,14 @@ import styled from "styled-components";
 import { useSelector } from "react-redux";
 
 export default function FooterPage() {
-  const result = useSelector((state) => state.name);
+  const { name, surname } = useSelector((state) => state);
 
   return (
     <DivFooter>
-      esse é meu valor encontrado no rodapé: <b>{result}</b>
+      Nome completo:{" "}
+      <b>
+        {name} {surname}
+      </b>
     </DivFooter>
   );
 }

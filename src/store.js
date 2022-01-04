@@ -5,10 +5,12 @@ import { persistStore, persistReducer } from "redux-persist";
 import storage from "redux-persist/lib/storage";
 
 import nameReducer from "./stores/name.reducer";
+import surNameReducer from "./stores/surname.reducer";
 
 //importando os reducers
 const rootReducer = combineReducers({
   name: nameReducer,
+  surname: surNameReducer,
 });
 
 //recebe um objeto de config e o rootReducer

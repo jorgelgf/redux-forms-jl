@@ -4,3 +4,10 @@ export function stringName(name) {
     payload: name,
   };
 }
+
+export function surName(surname) {
+  return {
+    type: "SURNAME",
+    payload: surname,
+  };
+}
