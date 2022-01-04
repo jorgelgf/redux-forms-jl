@@ -2,4 +2,9 @@
 
 Redux persist - instalação:
 
-npm install redux-persist
+```
+$: npm install redux-persist
+
+$: npm install redux react-redux --save
+
+```
